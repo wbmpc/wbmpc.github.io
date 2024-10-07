@@ -45,22 +45,22 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">Whole-Body Model Predictive Control for Mobile Manipulation with Task Priority Transition</h1>
-          <div class="is-size-5 publication-authors">
+          <div class="is-size-4 publication-authors">
             <span class="author-block">
-              <a href="mailto:wys23@mails.tsinghua.edu.cn">Yushi Wang</a>,
+              <a href="mailto:wys23@mails.tsinghua.edu.cn">Yushi Wang</a>&nbsp;&nbsp;&nbsp;&nbsp;
             </span>
             <span class="author-block">
-              <a href="mailto:chenrq22@mails.tsinghua.edu.cn">Ruoqu Chen</a>,
+              <a href="mailto:chenrq22@mails.tsinghua.edu.cn">Ruoqu Chen</a>&nbsp;&nbsp;&nbsp;&nbsp;
             </span>
             <span class="author-block">
               <a href="mailto:mgzhao@mail.tsinghua.edu.cn">Mingguo Zhao</a>
             </span>
           </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">Tsinghua University</span>
+          <div class="column has-text-centered">
+            <div class="publication-authors">
+              <img src="./static/images/logo.svg" class="interpolation-image" width="30%"/>
+            </div>
           </div>
-
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
@@ -73,6 +73,16 @@
                   <span>Paper</span>
                 </a>
               </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://youtu.be/4EtIXfSVnTQ"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
             </div>
           </div>
         </div>
@@ -81,52 +91,94 @@
   </div>
 </section>
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <div class="publication-video">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="100%">
-            <source src="./static/videos/main.mp4"
-                    type="video/mp4">
-          </video>
+<section class="hero teaser">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <!-- Paper video. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/4EtIXfSVnTQ?si=hE-OFwrrXjfdnioF"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
+      <!--/ Paper video. -->
     </div>
-    <!--/ Paper video. -->
   </div>
 </section>
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Mobile manipulators enable a wide range of operations with mobility and advanced manipulation capabilities. Despite
-            their potential, existing approaches typically treat the mobile base and the manipulator separately, thereby limiting
-            the optimality of the system for composite whole-body behaviors. In this work, we present a Whole-Body Model Predictive
-            Control framework for mobile manipulation involving tasks with varying timelines. We integrate task priorities across
-            both task and time dimensions, bringing inherent transition ability with enhanced performance. Our approach improves the
-            trajectory tracking performance by up to 36% in terms of manipulability and reduces the maximum velocity during task
-            priority transitions by 53% compared to the existing approach while maintaining a low computational cost of 4.3ms,
-            allowing for high reactivity in real-world applications. We demonstrate its effectiveness through a door-opening and
-            traversing behavior, showcasing the first successful implementation of a non-holonomic mobile manipulator in such a
-            scenario.
-          </p>
+<section class="hero teaser">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Mobile manipulators enable a wide range of operations with mobility and advanced manipulation capabilities. Despite
+              their potential, existing approaches typically treat the mobile base and the manipulator separately, thereby limiting
+              the optimality of the system for composite whole-body behaviors. In this work, we present a Whole-Body Model Predictive
+              Control framework for mobile manipulation involving tasks with varying timelines. We integrate task priorities across
+              both task and time dimensions, bringing inherent transition ability with enhanced performance. Our approach improves the
+              trajectory tracking performance by up to 36% in terms of manipulability and reduces the maximum velocity during task
+              priority transitions by 53% compared to the existing approach while maintaining a low computational cost of 4.3ms,
+              allowing for high reactivity in real-world applications. We demonstrate its effectiveness through a door-opening and
+              traversing behavior, showcasing the first successful implementation of a non-holonomic mobile manipulator in such a
+              scenario.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Overview</h2>
+          <div class="content has-text-centered">
+            <img src="./static/images/frame.png"/>
+          </div>
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
   </div>
+</section>
+
+<section class="hero teaser">
+  <div class="hero-body">
+  <div class="container is-max-desktop">
+    <div class="content has-text-centered">
+      <h2 class="title is-3">Door Opening and Traversing</h2>
+      <video autoplay controls muted loop playsinline width="30%" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
+        <source src="./static/videos/left.mp4"
+                type="video/mp4">
+      </video>
+      <video autoplay controls muted loop playsinline width="30%" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
+        <source src="./static/videos/back.mp4"
+                type="video/mp4">
+      </video>
+      <video autoplay controls muted loop playsinline width="30%" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
+        <source src="./static/videos/right.mp4"
+                type="video/mp4">
+      </video>
+      <video autoplay controls muted loop playsinline width="40%" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
+        <source src="./static/videos/left2.mp4"
+                type="video/mp4">
+      </video>
+      <video autoplay controls muted loop playsinline width="40%" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
+        <source src="./static/videos/right2.mp4"
+                type="video/mp4">
+      </video>
+    </div>
+  </div>
+</div>
 </section>
 
 <footer class="footer">
